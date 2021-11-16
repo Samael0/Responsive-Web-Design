@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Survey Form</h1>
+          <p id="description" class="description text-center">
+            Short Survey For FreeCodeCamp
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>What is your favorite game from this list?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select game</option>
+              <option value="student">Silent Hill</option>
+              <option value="job">Dark Souls</option>
+              <option value="learner">Resident Evil</option>
+              <option value="preferNo">Final Fantasy</option>
+              <option value="other">Metal Gear Solid</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Would your recommend the game to a friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What system do you prefer to play games?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="ps4"
+                type="checkbox"
+                class="input-checkbox"
+              />PS4</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="ps5"
+                type="checkbox"
+                class="input-checkbox"
+              />PS5</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="pc"
+                type="checkbox"
+                class="input-checkbox"
+              />PC</label
+            >
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    
+</body>
+</html>
