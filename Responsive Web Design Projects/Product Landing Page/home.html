@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="home.css">
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="https://cdn.videogamesblogger.com/wp-content/uploads/2021/02/Silent-Hill-Banner-Small.jpg"
+        alt="Silent Hill"
+      />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">System Requirements</a></li>
+        <li><a class="nav-link" href="#pricing">Pre Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>Best Horror Game Franchise</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="desc">
+          <h2>Cutting Edge Technology</h2>
+          <p>
+            Using the newest development tools, we bring the most authentic and realistic experience
+            for silent hill.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            Order Now and we can ship early to make sure you recieve your copy on
+            the release date.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="desc">
+          <h2>Pre Order Bonus</h2>
+          <p>
+            Recieve a exclusive skin to use in game if you pre order.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="trailer">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube.com/embed/Ay_RAkE7bUY"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Silent Hill</div>
+        <h2>$60</h2>
+        <ol>
+          <li>Base Game</li>
+          <li>Pre Order Bonus</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Standard</div>
+        <h2>$80</h2>
+        <ol>
+          <li>Base Game</li>
+          <li>Pre Order Bonus</li>
+          <li>Soundtrack</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Deluxe Edition</div>
+        <h2>$120</h2>
+        <ol>
+          <li>Base Game</li>
+          <li>Pre Order Bonus</li>
+          <li>Soundtrack</li>
+          <li>Statue</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
